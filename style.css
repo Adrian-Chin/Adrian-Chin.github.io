@@ -1,0 +1,25 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  font-size: 5em;
+  animation: text-color-change 3s infinite;
+}
+
+@keyframes text-color-change {
+  0% {
+    color: yellow;
+  }
+  50% {
+    color: green;
+  }
+  100% {
+    color: yellow;
+  }
+}
