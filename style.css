@@ -10,6 +10,9 @@ h1 {
   margin-bottom: auto;
   font-size: 5em;
   animation: text-color-change 3s infinite;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 @keyframes text-color-change {
