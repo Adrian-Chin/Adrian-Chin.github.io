@@ -5,24 +5,54 @@ html {
 
 h1 {
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto;
   font-size: 5em;
-  animation: text-color-change 3s infinite;
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
+  position: relative;
 }
 
-@keyframes text-color-change {
-  0% {
-    color: yellow;
-  }
-  50% {
-    color: green;
-  }
-  100% {
-    color: yellow;
-  }
+h1::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: blue;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+h1:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+img.rabbit-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.tabs {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.tab {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.tab:hover {
+  text-decoration: underline;
+}
+
+.search-tab {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.search-tab:hover {
+  text-decoration: underline;
 }
