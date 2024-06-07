@@ -7,18 +7,19 @@ h1 {
   text-align: center;
   font-size: 5em;
   position: relative;
+  -webkit-text-fill-color: transparent;
+  animation: color-change 2s infinite;
 }
-
-h1::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  background: blue;
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  transition: width 0.3s ease, left 0.3s ease;
+@keyframes color-change {
+  0% {
+    -webkit-text-fill-color: green; 
+  }
+  50% {
+    -webkit-text-fill-color: yellow; 
+  }
+  100% {
+    -webkit-text-fill-color: green; 
+  }
 }
 
 h1:hover::after {
@@ -55,4 +56,9 @@ img.rabbit-image {
 
 .search-tab:hover {
   text-decoration: underline;
+}
+
+
+
+  
 }
