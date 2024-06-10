@@ -1,7 +1,5 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const aboutLink = document.querySelector('nav ul li a[href="#about"]');
-  aboutLink.addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent default link behavior
-    window.location.href = 'about.html'; // Redirect to about.html
-  });
+document.addEventListener('scroll', function() {
+  var scrollTop = window.scrollY;
+  var text = document.querySelector('h1');
+  text.style.top = (50 + scrollTop / 10) + '%'; // Adjust the division factor as needed for smoother or faster motion
 });
