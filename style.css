@@ -20,13 +20,6 @@ h1 {
   color: black; /* Ensure the text color is visible */
 }
 
-img.rabbit-image {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
-}
-
 .tabs {
   display: flex;
   justify-content: flex-end;
@@ -70,17 +63,6 @@ img.rabbit-image {
   }
 }
 
-/* Styles for the curved vertical rectangles */
-.rectangle {
-  position: relative;
-  width: 10px; /* Width of the rectangles */
-  height: 150px; /* Height of the rectangles */
-  background-color: #888; /* Grey color */
-  margin-top: 10px; /* Adjust margin as needed */
-  border-radius: 5px; /* Curved border radius */
-}
-
-/* Add your special font family */
 
 .my-works, .other-things, .new-section {
   background-color: #f2f2f2; /* Gray background color for sections */
