@@ -1,30 +1,23 @@
-html {
+/* style.css */
+html, body {
   height: 100%;
-  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.top-section {
+  height: 8vh; /* Adjust the height as desired */
+  background-color: #1a1a1c;
 }
 
 h1 {
   text-align: center;
-  font-size: 5em;
-  position: relative;
-  -webkit-text-fill-color: transparent;
-  animation: color-change 2s infinite;
-}
-@keyframes color-change {
-  0% {
-    -webkit-text-fill-color: green; 
-  }
-  50% {
-    -webkit-text-fill-color: yellow; 
-  }
-  100% {
-    -webkit-text-fill-color: green; 
-  }
-}
-
-h1:hover::after {
-  width: 100%;
-  left: 0;
+  font-size: 2.5em;
+  position: fixed;
+  top: 50%; /* Initial vertical position */
+  left: 50%; /* Move the text to the center horizontally */
+  transform: translate(-50%, -50%); /* Center the text */
+  color: black; /* Ensure the text color is visible */
 }
 
 img.rabbit-image {
@@ -38,27 +31,78 @@ img.rabbit-image {
   display: flex;
   justify-content: flex-end;
   padding: 10px;
+  background-color: #1a1a1c; /* Ensure the tabs are visible */
 }
 
-.tab {
+.tabs ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.tabs ul li {
   margin: 0 10px;
-  cursor: pointer;
 }
 
-.tab:hover {
-  text-decoration: underline;
+.tabs ul li a {
+  text-decoration: none;
+  color: white; /* Set link color to white */
+  font-size: 1.2em;
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s;
 }
 
-.search-tab {
-  margin: 0 10px;
-  cursor: pointer;
+.tabs ul li a:hover {
+  animation: bubble 0.6s ease-in-out forwards;
 }
 
-.search-tab:hover {
-  text-decoration: underline;
+@keyframes bubble {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
+/* Styles for the curved vertical rectangles */
+.rectangle {
+  position: relative;
+  width: 10px; /* Width of the rectangles */
+  height: 150px; /* Height of the rectangles */
+  background-color: #888; /* Grey color */
+  margin-top: 10px; /* Adjust margin as needed */
+  border-radius: 5px; /* Curved border radius */
+}
 
+/* Add your special font family */
 
-  
+.my-works, .other-things, .new-section {
+  background-color: #f2f2f2; /* Gray background color for sections */
+  padding: 20px; /* Add padding for spacing */
+  border-radius: 10px; /* Rounded corners */
+  margin: 20px auto; /* Center the div */
+  width: 40%; /* Width of the div */
+}
+
+.animated-text {
+  font-family: "SpecialFont", sans-serif; /* Apply the special font */
+  font-size: 28px !important; /* Adjust font size as needed */
+  margin: 10px 0; /* Adjust margin for spacing */
+  transition: transform 0.3s; /* Add transition effect for scaling */
+}
+
+.animated-text:hover {
+  transform: scale(1.1); /* Apply scale animation on hover */
+}
+
+.new-section p {
+  text-align: center;
+  font-size: 35px;
+  margin: 10px 0; /* Adjust margin for spacing */
 }
