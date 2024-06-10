@@ -1,4 +1,3 @@
-<!--bootstrapmade-->
 <!DOCTYPE html>
 <html>
 
@@ -7,19 +6,91 @@
   <meta name="viewport" content="width=device-width">
   <title>My Website</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    .background-section {
+      background-image: url('https://i.pinimg.com/originals/96/3e/ab/963eabdf80722f92992ad433c76b7ca1.gif');
+      background-size: cover;
+      background-attachment: fixed;
+      height: 600px; /* Adjust height as needed */
+    }
+
+    /* Style for the text sections */
+    .text-section {
+      text-align: center;
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .text-left {
+      width: 25%; /* Adjust width as needed */
+    }
+
+    .text-right {
+      width: 25%; /* Adjust width as needed */
+    }
+
+    .my-works p {
+      font-size: 28px; /* Adjust font size for "My Works" */
+    }
+
+    .other-things p {
+      font-size: 28px; /* Adjust font size for "Other Things" */
+    }
+
+    /* Other styles can be added here */
+
+  </style>
 </head>
 
 <body>
+  <div class="top-section"></div>
+  
   <div class="tabs">
-     <li><a href="about.html">About</a></li> 
-    <a href="https://docs.google.com/spreadsheets/d/1Wp5_DnysB0em2-xaRdMEM_xOPT2kn9RWG0b4aBBx9E4/edit?pli=1#gid=1824411883"><span class="tab">Miscellaneous</span></a>
-    <span class="tab">What This Page Can Do</span>
-    <span class="search-tab">Search</span>
+    <ul>
+      <li><a href="about.html">About</a></li> 
+      <li><a href="https://docs.google.com/spreadsheets/d/1Wp5_DnysB0em2-xaRdMEM_xOPT2kn9RWG0b4aBBx9E4/edit?pli=1#gid=1824411883">Miscellaneous</a></li>
+      <li><a href="WTPCD.html">What This Page Can Do</a></li>
+      <li><a href="search.html">Search</a></li>
+    </ul>
   </div>
 
   <div class="content">
-    <h1>Adrian Chin</h1>
-    <img src="https://www.humanesociety.org/sites/default/files/styles/2000x850/public/2019/03/rabbit-475261_0.jpg?h=c855054e&itok=8wBMy7-t" alt="Rabbit Image" class="rabbit-image">
+    <div class="background-section">
+      <!-- Content within the section with background -->
+      <h1>"ᴡʜᴇʀᴇ ɪᴍᴀɢɪɴᴀᴛɪᴏɴ ᴍᴇᴇᴛꜱ ʀᴇᴀʟɪᴛʏ"</h1>
+    </div>
+  
+    <!-- Other content of your page -->
+    <div class="text-section">
+      <div class="my-works">
+        <div class="section-content">
+          <p class="animated-text">My Works</p>
+          <p class="animated-text">2024 APCSA FRQ Responses:</p>
+          <p class="animated-text"><a href="https://github.com/Adrian-Chin/2024-APCSA/tree/main/FRQ-Solutions/Question-1" target="_blank">FRQ #1: Birds and a Bear</a></p>
+          <p class="animated-text"><a href="https://github.com/Adrian-Chin/2024-APCSA/tree/main/FRQ-Solutions/Question-2">FRQ #2: Scoreboard</a></p>
+          <p class="animated-text"><a href="https://github.com/Adrian-Chin/2024-APCSA/tree/main/FRQ-Solutions/Question-3">FRQ #3: Word Chain</a></p>
+          <p class="animated-text"><a href="https://github.com/Adrian-Chin/2024-APCSA/tree/main/FRQ-Solutions/Question-4">FRQ #4: Grid Path</a></p>
+        </div>
+      </div>
+
+      <div class="other-things">
+        <div class="section-content">
+          <p class="animated-text">Other Things</p>
+          <p class="animated-text"><a href="https://github.com/Adrian-Chin/sat-data">SAT Data</a></p>
+        </div>
+      </div>
+    </div> 
+
+    <br><br><br><br><br>
+    <div class="new-section">
+      <div class="section-content">
+        <p class="animated-text">Goals:</p>
+        <p class="animated-text">Make this website cool!</p>
+        <p class="animated-text">Finish up my assignments</p>
+        <p class="animated-text">Graduate</p>
+      </div>
+    </div>
   </div>
 
   <script src="script.js"></script>
